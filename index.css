@@ -1,0 +1,351 @@
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/webfonts/inter-cyrillic-400-normal.woff2') format('woff2'),
+    url('./fonts/webfonts/inter-cyrillic-400-normal.woff') format('woff');
+        
+    font-weight: normal;
+    font-style: normal;
+  }
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    margin: 0px;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:whitesmoke;
+    font-family: 'Inter', sans-serif;
+}
+
+.card-container {
+    width: 442px;
+    height: 450px;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+   background-color: rgb(255, 255, 255);
+}
+
+.card {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.card .in-active {
+   
+    border-radius: 10px;
+    box-shadow:1px 1px 1px rgba(159, 159, 159, 1);
+    height: 74px;
+    width: 342px;
+    display: block;
+    
+}
+
+.card .active {
+    width: 325px;
+    height: 172px;
+    border: 1px solid rgba(255, 107, 130, 1);
+    border-radius: 10px;
+    padding: 20px 0px 0px 20px;
+    background-color: rgba(255, 249, 250, 1);
+    
+    display: none;
+}
+
+.in-active-card {
+    display: flex;
+    height: 100%;
+   
+    justify-content: center; /* Optional: Adjust spacing between items */
+    align-items: center; /* Optional: Vertically center the content */
+}
+
+.left {
+    flex: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    background-color : rgba(255, 107, 130, 1);
+}
+
+.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    flex: 2; /* Optional: Adjusts the size of the right section */
+}
+p{
+    margin: 2px;
+}
+#inactive-rightmost-para{
+    flex: 2;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(255, 107, 130, 1);
+}
+.active-section-top-part .contained-para-active{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 15px;
+}
+.contained-para{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin: 0px 0px 0px 11px;
+}
+.dropdown {
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+   margin: 6px;
+}
+
+.dropdown label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.dropdown select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.active-section-top-part{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+.active-section-bottom-part{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 20px;
+}
+.dropdown-first{
+    display: flex;
+}
+h3{
+    color: rgba(255, 107, 130, 1);
+    font-weight: 700;
+    font-size: 21;
+}
+/* Hide the default radio button */
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 107, 130, 1); /* Outer circle color */
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+/* Style for the inner dot when checked */
+input[type="radio"]:checked::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 107, 130, 1); /* Inner circle color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.dropdown{
+
+  
+}
+.dropdown select {
+  width: 70px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: white;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative; /* Position for absolute positioning of the icon */
+  }
+  
+
+
+  #left-text{
+    font-size: large;
+    color: white;
+    margin:0px;
+  }
+  #offer-text{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+
+  }
+  .contained-para #offer-text #price-text{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+  .contained-para #price-text{
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+
+  .contained-para-active #price-text{
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+
+  }
+  .para-in-container{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(255, 107, 130, 1);
+    padding: 1px 2px 1px 2px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+
+  }
+  .para-in-container #offer-text{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+
+
+  }
+ 
+  .active-section-top-part .contained-para2-active{
+    margin-left: 5px;
+
+  }
+ 
+  .contained-para2-active #price-text{
+    position: relative;
+    color: rgba(159, 159, 159, 1);
+    font-size: 10px;
+
+  }
+
+  .contained-para2-active #price-text::before{
+   
+    content: '';
+    position: absolute;
+    top: 6px; /* Adjust the top value as needed */
+    left: 6px;
+    right: 0;
+    height: 1px;
+    width: 50px;
+    border-top: 0.68px solid rgba(159, 159, 159, 1); /* Adjust border color and width as needed */
+   
+    
+
+  }
+  
+  #label-number{
+    font-size: 10px;
+  }
+  label[for= 'size']{
+    font-size: 11px;
+    text-align: center;
+  }
+  label[for= 'colour']{
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .bottom-section{
+    margin-bottom: 15px;
+    width: 442px;
+    height: 110px;
+    background-color: white;
+    display: flex;
+   
+    flex-direction: column;
+    align-items: center;
+ 
+    
+  
+  }
+  .bottom-top{
+   margin-top: 4px;
+    width: 342px;
+    display: flex;
+    justify-content: space-between;
+   
+  }
+ 
+  #free-delivery-para{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255, 107, 130, 1);
+  }
+  #total-cost{
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+.bottom-middle{
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+
+#add-to-cart{
+  width: 342px;
+  margin : 10px 0px 4px 0px;
+  padding: 8px 0px 8px 0px;
+  border-radius: 4px;
+  border: none;
+background-color: rgba(255, 107, 130, 1);
+color: white;
+cursor: pointer;
+}
+.bottom-middle #plus-sign{
+  font-size: 20px;
+}
+.bottom-middle #add-cart-text{
+  font-size: 12px;
+}
+.bottom{
+  display: flex;
+  margin-bottom: 10px;
+}
+#powerd-by{
+  font-size: 10px;
+  color:  rgba(212, 212, 212, 1);
+}
+#plumper-para{
+  font-size: 10px;
+  color: red;
+  font-weight: 700;
+}
+
+
+
+

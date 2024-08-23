@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+   
+      
+      <div class="card-container">
+        <h3>YAY! It's BOGO</h3>
+        <div class="card" onclick="toggleCard(0)">
+          <div class="in-active">
+            <div class="in-active-card">
+              <div class="left">
+                <p id = "left-text">30%</p>
+                <p id = "left-text">Off</p>
+              </div>
+
+              <div class="right">
+                <input type="radio" name="bundle" value="1"/>
+                <div class="contained-para">
+                  <p id = "offer-text">Buy 1 Get 2</p>
+                  <p id = "price-text">$18.00 USD</p>
+                </div>
+              </div>
+              <p id="inactive-rightmost-para"></p>
+            </div>
+          </div>
+          <div class="active">
+            <div class="active-section-top-part">
+              <input type="radio" name="bundle" value="1" />
+              <div class="contained-para-active">
+                <p id = "offer-text">Buy 1 Get 2</p>
+                  <p id = "price-text">$18.00 USD</p>
+               
+              </div>
+            </div>
+            <div class="active-section-bottom-part">
+              <div class="dropdown-first">
+               
+                <div class="dropdown">
+                  <label for="size">Size</label>
+                  <div class="row-size-number">
+                    <Label id="label-number">#1</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <label for="colour">Colour</label>
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dropdown-first">
+                <div class="dropdown">
+                 <div class="row-number">
+                    <Label id = "label-number">#2</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(1)">
+          <div class="in-active">
+            <div class="in-active-card">
+              <div class="left">
+                <p id = "left-text">30%</p>
+                <p id = "left-text">Off</p>
+              </div>
+
+              <div class="right">
+                <input type="radio" name="bundle" value="1" />
+                <div class="contained-para">
+                  <p id = "offer-text">Buy 2 Get 4</p>
+                  <p id = "price-text">$24.00 USD</p>
+                </div>
+              </div>
+              <p id="inactive-rightmost-para">Most Popular</p>
+            </div>
+          </div>
+          <div class="active">
+            <div class="active-section-top-part">
+              <input type="radio" name="bundle" value="1" />
+              <div class="contained-para-active">
+                <p id = "offer-text">Buy 2 Get 4</p>
+                  <p id = "price-text">$24.00 USD</p>
+               
+              </div>
+            </div>
+            <div class="active-section-bottom-part">
+              <div class="dropdown-first">
+               
+                <div class="dropdown">
+                  <label for="size">Size</label>
+                  <div class="row-size-number">
+                    <Label id="label-number">#1</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <label for="colour">Colour</label>
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dropdown-first">
+                <div class="dropdown">
+                 <div class="row-size-number">
+                    <Label id = "label-number">#2</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" onclick="toggleCard(2)">
+          <div class="in-active">
+            <div class="in-active-card">
+              <div class="left">
+                <p id = "left-text">30%</p>
+                <p id = "left-text">Off</p>
+              </div>
+
+              <div class="right">
+                <input type="radio" name="bundle" value="1" />
+                <div class="contained-para">
+                  <p id = "offer-text">Buy 3 Get 6</p>
+                  <p id ="price-text">$36.00 USD</p>
+                </div>
+              </div>
+              <p id="inactive-rightmost-para">10% Off</p>
+            </div>
+          </div>
+          <div class="active">
+            <div class="active-section-top-part">
+              <input type="radio" name="bundle" value="1" />
+              <div class="contained-para-active">
+                <p id = "offer-text">Buy 3 Get 6</p>
+                  <p id = "price-text">$36.00 USD</p>
+               
+              </div>
+              <div class="contained-para2-active">
+                <div class="para-in-container">
+                  <p id = "offer-text">10% Off</p>
+                </div>
+                  
+                  <p id = "price-text">$10.00 USD</p>
+               
+              </div>
+            </div>
+            <div class="active-section-bottom-part">
+              <div class="dropdown-first">
+               
+                <div class="dropdown">
+                  <label for="size">Size</label>
+                  <div class="row-size-number">
+                    <Label id="label-number">#1</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <label for="colour">Colour</label>
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+              <div class="dropdown-first">
+                <div class="dropdown">
+                 <div class="row-size-number">
+                    <Label id = "label-number">#2</Label>
+                    <select id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                    </select>
+                </div>
+                </div>
+                <div class="dropdown">
+                  <select id="colour">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Red">Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="bottom-top">
+          <p id="free-delivery-para">Free Delivery</p>
+        <p id = "total-cost">Total : $18.00 USD</p>
+
+        </div>
+        
+          <button id = "add-to-cart"> 
+            <div class="bottom-middle" onclick="">
+              <p id="plus-sign">+</p><p id = "add-cart-text">Add to Cart</p>
+
+            </div>
+          
+          </button>
+         
+
+     
+        
+        <div class="bottom">
+          <p id = "powerd-by">Powered by</p>
+          <p id="plumper-para">Pumper</p>
+        
+
+        </div>
+      </div>
+
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
